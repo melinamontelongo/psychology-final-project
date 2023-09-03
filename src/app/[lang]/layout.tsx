@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import ToggleLang from '../../components/ToggleLang';
 import "../globals.css";
 import Navbar from '@/components/Navbar';
 
@@ -19,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         <Navbar lang={params.lang} />
-        {children}
+          {children}
       </body>
     </html>
   )
