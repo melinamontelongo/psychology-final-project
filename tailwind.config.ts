@@ -6,9 +6,8 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: ['class'],
-/*   daisyui: {
-    themes: ["corporate", "business"],
-    darkTheme: "business",
-  }, */
+  daisyui: {
+    themes: ["forest"],
+  },
   plugins: [require("daisyui")],
 }
