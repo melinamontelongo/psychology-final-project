@@ -17,14 +17,14 @@ const ToggleLang = ({ lang }: { lang: string }) => {
         router.refresh();
     }
     return (<>
-        <label ref={labelRef} className={`swap swap-flip ${lang === "es" && "swap-active"} btn btn-ghost`} onClick={() => changeLang()}>
+        <label ref={labelRef} className={`swap swap-flip ${lang === "es" && "swap-active"} place-content-start`} onClick={() => changeLang()}>
             <div className={`swap-on flex items-center`}>
                 <Image src={spanishFlag} alt="Spanish language" width={32} height={32} />
-                <p className="2xl:text-2xl">Esp</p>
+                <p className="2xl:text-2xl uppercase font-bold">Esp</p>
             </div>
             <div className={`swap-off flex items-center`}>
                 <Image src={englishFlag} alt="English language" width={32} height={32} />
-                <p className="2xl:text-2xl">Eng</p>
+                <p className="2xl:text-2xl uppercase font-bold">Eng</p>
             </div>
 
         </label>
