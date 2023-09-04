@@ -15,7 +15,7 @@ export default function OverviewPage({ params }: { params: { lang: string } }) {
                         <h2 className="mb-5 text-5xl font-bold 2xl:text-8xl cursor-pointer hover:scale-125 hover:text-primary transition-all">{dictionary.formatsTitle}</h2>
                         <ul className="flex flex-col gap-2">
                             {dictionary.formatsList.map((f) => {
-                                return <li key={f} className="mb-5 mb-5 text-xl 2xl:text-4xl font-bold">{f}</li>
+                                return <li key={f} className="mb-5 text-xl 2xl:text-4xl font-bold">{f}</li>
                             })}
                         </ul>
                     </div>
@@ -23,14 +23,14 @@ export default function OverviewPage({ params }: { params: { lang: string } }) {
                         <h2 className="mb-5 text-5xl font-bold 2xl:text-8xl cursor-pointer hover:scale-125 hover:text-primary transition-all">{dictionary.theoryTitle}</h2>
                         <ul className="flex flex-col gap-2">
                             {dictionary.theoryList.map((t) => {
-                                return <li key={t} className="mb-5 mb-5 text-xl 2xl:text-4xl font-bold">{t}</li>
+                                return <li key={t} className="mb-5 text-xl 2xl:text-4xl font-bold">{t}</li>
                             })}
                         </ul>
                     </div>
                     <div className="flex flex-row items-center justify-center gap-5">
                         <PrevBtnLink href={"/"} />
                         <PauseBtn />
-                        <NextBtnLink href={"/"}/>
+                        <NextBtnLink href={"/formats"}/>
                     </div>
                 </div>
             </div>

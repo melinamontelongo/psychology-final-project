@@ -4,7 +4,7 @@ import { NavbarDictionary } from "@/content/navbar";
 
 const Navbar = ({ lang }: { lang: string }) => {
     return (
-        <nav className="navbar absolute px-4 py-2 2xl:px-10 2xl:py-5 w-full backdrop-blur bg-base/70 z-50 shadow-lg">
+        <nav className="navbar fixed px-4 py-2 2xl:px-10 2xl:py-5 w-full backdrop-blur bg-base/70 z-50 shadow-lg">
             <div className="md:flex md:justify-between w-full hidden">
                 <Link href="/" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.introduction}</Link>
                 <Link href="/formats" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.formats}</Link>
