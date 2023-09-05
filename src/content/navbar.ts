@@ -1,4 +1,5 @@
 interface NavbarDictionaryEntry {
+    start: string,
     introduction: string,
     formats: string,
     theory: string,
@@ -8,6 +9,7 @@ interface NavbarDictionaryEntry {
 
 export const NavbarDictionary: Record<string, NavbarDictionaryEntry> = {
     es: {
+        start: "Inicio",
         introduction: `Introducción`,
         formats: `Soportes y prácticas`,
         theory: `Abordajes teóricos`,
@@ -15,6 +17,7 @@ export const NavbarDictionary: Record<string, NavbarDictionaryEntry> = {
         references: `Referencias`
     },
     en: {
+        start: "Start",
         introduction: `Introduction`,
         formats: `Formats and practices`,
         theory: `Theoretical approaches`,
