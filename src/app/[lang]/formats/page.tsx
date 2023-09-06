@@ -17,7 +17,9 @@ export default function FormatsPage({ params }: { params: { lang: string } }) {
                                     return (
                                         <div key={section.title}>
                                             <h4 className="text-2xl 2xl:text-5xl font-bold">{section.title}</h4>
-                                            <p>{section.info}</p>
+                                            {section.info.map((i) => {
+                                                return <p key={i}>{i}</p>
+                                            })}
                                         </div>
                                     )
                                 })}
