@@ -26,7 +26,6 @@ export const useScrollTop = () => {
 
     const handleScroll = debounce(() => {
         const currentScrollPos = window.scrollY;
-        console.log(prevScrollPos, currentScrollPos)
         setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 100) || currentScrollPos < 10);
         setPrevScrollPos(currentScrollPos);
     }, 100);
