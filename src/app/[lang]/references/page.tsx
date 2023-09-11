@@ -12,7 +12,7 @@ export default function ReferencesPage({ params }: { params: { lang: string } })
                 <h4 className="text-2xl 2xl:text-5xl font-bold">
                     {lang === "en" ? "Full project and reference list can be found " : "El trabajo completo y la lista de referencias pueden ser encontrados "}
 
-                    <Link className="text-primary hover:underline" target="_blank" href="https://drive.google.com/file/d/1nZJwVTQ0J_-xHHwzDy6IQcV9ygA30ghx/view">{lang === "en" ? " here" : " aquí"}</Link>
+                    <Link className="text-primary hover:underline" target="_blank" href="/tfg/tfg-Melina-Montelongo.pdf">{lang === "en" ? " here" : " aquí"}</Link>
                 </h4>
                 {lang === "en" && <p className="text-xl 2xl:text-2xl font-bold text-base-content">Only available in spanish as of now.</p>}
             </div>

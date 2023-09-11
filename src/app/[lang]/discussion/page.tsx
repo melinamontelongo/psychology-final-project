@@ -8,9 +8,9 @@ export default function DiscussionPage({ params }: { params: { lang: string } })
     return (
         <div className="min-h-screen pt-20 flex flex-col justify-center items-center">
             <div className="max-w-2xl 2xl:max-w-5xl">
-                {dictionary.discussion.map((discussion) => {
+                {dictionary.discussion.map((discussion, i) => {
                     return (
-                        <div>
+                        <div key={`discussion-${i}`}>
                             <h2 id="" className="mb-5 text-5xl font-bold 2xl:text-8xl cursor-pointer hover:scale-125 hover:text-primary transition-all">{discussion.title}</h2>
                             <div className="flex flex-col gap-5 mb-5">
                                 {discussion.sections.map((section) => {

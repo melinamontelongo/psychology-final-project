@@ -28,8 +28,5 @@ const middleware = (request: NextRequest) => {
 export default middleware;
 
 export const config = {
-    matcher: [
-        // Skip all internal paths (_next)
-        '/((?!_next).*)',
-    ]
+    matcher: "/((?!api|static|.*\\..*|_next).*)",
 }

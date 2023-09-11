@@ -1,7 +1,4 @@
 import { IntroductionDictionary } from "../../content/introduction"
-import HomeBgImage from "../../assets/home-hero2.jpg"
-import { IoPlayForward } from "react-icons/io5";
-import Link from "next/link";
 import NextBtnLink from "@/components/NextBtnLink";
 import PauseBtn from "@/components/PauseBtn";
 import PrevBtnLink from "@/components/PrevBtnLink";
@@ -10,7 +7,7 @@ export default function HomePage({ params }: { params: { lang: string } }) {
   const dictionary = IntroductionDictionary[params.lang];
 
   return (
-    <div className="hero min-h-screen" style={{ backgroundImage: `url(${HomeBgImage.src})` }}>
+    <div className="hero min-h-screen" style={{ backgroundImage: `url("/images/backgrounds/home-hero2.jpg")` }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-base-content pt-20">
         <div className="max-w-2xl 2xl:max-w-5xl">

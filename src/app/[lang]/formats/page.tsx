@@ -1,25 +1,34 @@
+import ImageCarousel from "@/components/ImageCarousel";
 import NextBtnLink from "@/components/NextBtnLink";
 import PauseBtn from "@/components/PauseBtn";
 import PrevBtnLink from "@/components/PrevBtnLink";
 import { FormatsDictionary } from "@/content/formats"
+import Image from "next/image";
 
 export default function FormatsPage({ params }: { params: { lang: string } }) {
     const dictionary = FormatsDictionary[params.lang];
     return (
         <div className="min-h-screen pt-20 flex flex-col justify-center items-center">
-            <div className="max-w-2xl 2xl:max-w-5xl">
-                {dictionary.formats.map((format) => {
+            <div className="max-w-4xl 2xl:max-w-7xl mx-auto px-4">
+                {dictionary.formats.map((format, i) => {
                     return (
-                        <div>
-                            <h2 id="" className="mb-5 text-5xl font-bold 2xl:text-8xl cursor-pointer hover:scale-125 hover:text-primary transition-all">{format.title}</h2>
+                        <div key={`formats-${i}`} className="">
+                            <h2 id="" className="mb-5 text-5xl font-bold 2xl:text-8xl cursor-pointer hover:scale-125 hover:text-primary w-fit transition-all">{format.title}</h2>
                             <div className="flex flex-col gap-5 mb-5">
                                 {format.sections.map((section) => {
                                     return (
-                                        <div key={section.title}>
-                                            <h4 className="text-2xl 2xl:text-5xl font-bold">{section.title}</h4>
-                                            {section.info.map((i) => {
-                                                return <p key={i}>{i}</p>
-                                            })}
+                                        <div key={section.title} className="flex flex-col gap-2">
+                                            <div>
+                                                <h4 className="text-3xl 2xl:text-6xl font-bold">{section.title}</h4>
+                                                {section.info.map((i) => {
+                                                    return <p className="text-xl 2xl:text-2xl" key={i}>{i}</p>
+                                                })}
+                                            </div>
+                                            <div>
+                                                {section.images?.length > 0 && (
+                                                    <ImageCarousel images={section.images} />
+                                                )}
+                                            </div>
                                         </div>
                                     )
                                 })}
