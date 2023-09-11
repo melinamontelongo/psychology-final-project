@@ -9,7 +9,7 @@ export default function FormatsPage({ params }: { params: { lang: string } }) {
     const dictionary = FormatsDictionary[params.lang];
     return (
         <div className="min-h-screen pt-20 flex flex-col justify-center items-center">
-            <div className="max-w-4xl 2xl:max-w-7xl mx-auto px-4">
+            <div className="max-w-screen-lg 2xl:max-w-screen-2xl mx-auto px-4">
                 {dictionary.formats.map((format, i) => {
                     return (
                         <div key={`formats-${i}`} className="">

@@ -2,22 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-} */
-
 .embla {
   --slide-spacing: 1rem;
-  --slide-size: 50%;
-  --slide-height: 19rem;
+  --slide-size: 65%;
+  --slide-height: 25rem;
   padding: 1.6rem;
+}
+
+@media (max-width: 1250px) and (min-width: 768px) {
+  .embla {
+    --slide-height: 19rem;
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .embla {
+    --slide-spacing: 0.5rem;
+    --slide-size: 80%;
+    --slide-height: 19rem;
+    padding: 1rem;
+  }
 }
 
 .embla__viewport {
