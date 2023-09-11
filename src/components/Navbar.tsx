@@ -1,26 +1,11 @@
 "use client"
 import Link from "next/link";
 import ToggleLang from "./ToggleLang";
-import debounce from "lodash.debounce";
 import { NavbarDictionary } from "@/content/navbar";
-import { useState, useEffect } from "react";
+import { useScrollTop } from "@/hooks/useScroll";
 
 const Navbar = ({ lang }: { lang: string }) => {
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true);
-
-    const handleScroll = debounce(() => {
-        const currentScrollPos = window.scrollY;
-        console.log(prevScrollPos, currentScrollPos)
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 100) || currentScrollPos < 10);
-        setPrevScrollPos(currentScrollPos);
-    }, 100);
-
-    useEffect(() => {
-        if (!window) return;
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos, visible, handleScroll]);
+    const { visible } = useScrollTop();
 
     return (
         <nav className={`navbar fixed px-4 py-2 2xl:px-10 2xl:py-5 w-full backdrop-blur bg-base-100/20 z-50 shadow-lg transition-all duration-500 ease-in-out ${visible ? "top-0" : "-top-20"}`}>

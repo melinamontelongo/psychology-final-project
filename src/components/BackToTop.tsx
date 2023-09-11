@@ -1,9 +1,9 @@
 "use client"
 import { IoIosArrowUp } from "react-icons/io";
-import { useScroll } from "@/hooks/useScroll";
+import { useScrollBottom } from "@/hooks/useScroll";
 
 const BackToTop = () => {
-    const { visible } = useScroll();
+    const { visible } = useScrollBottom();
 
     const scrollToTop = () => {
         if (window) window.scrollTo({ top: 20, behavior: "smooth" });
