@@ -1,9 +1,9 @@
+import Badge from "@/components/Badge";
 import ImageCarousel from "@/components/ImageCarousel";
 import NextBtnLink from "@/components/NextBtnLink";
 import PauseBtn from "@/components/PauseBtn";
 import PrevBtnLink from "@/components/PrevBtnLink";
 import { FormatsDictionary } from "@/content/formats"
-import Image from "next/image";
 
 export default function FormatsPage({ params }: { params: { lang: string } }) {
     const dictionary = FormatsDictionary[params.lang];
@@ -19,7 +19,7 @@ export default function FormatsPage({ params }: { params: { lang: string } }) {
                                     return (
                                         <div key={section.title} className="flex flex-col gap-2">
                                             <div>
-                                                <h4 className="text-3xl 2xl:text-6xl font-bold">{section.title}</h4>
+                                                <h4 className="text-2xl 2xl:text-5xl font-bold">{section.title}</h4>
                                                 {section.info.map((i) => {
                                                     return <p className="text-xl 2xl:text-2xl" key={i}>{i}</p>
                                                 })}
@@ -35,7 +35,7 @@ export default function FormatsPage({ params }: { params: { lang: string } }) {
                                 <div className="flex flex-row flex-wrap gap-2">
                                     {format.keywords.map((keyword) => {
                                         return (
-                                            <span key={keyword} className="badge badge-lg badge-primary">{keyword}</span>
+                                            <Badge key={keyword} text={keyword} />
                                         )
                                     })}
                                 </div>

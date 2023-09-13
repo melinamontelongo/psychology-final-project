@@ -418,7 +418,6 @@ export const FormatsDictionary: Record<string, FormatsDictionaryEntry> = {
                 ],
                 keywords: [
                     "De la posesión al acceso",
-                    "Modelo freemium",
                     "Legalización y monetización",
                     "Listas de reproducción",
                     "Neo-muzak",
@@ -426,7 +425,7 @@ export const FormatsDictionary: Record<string, FormatsDictionaryEntry> = {
                     "Estados de ánimo",
                     "Algoritmos",
                     "Opacidad",
-                    "Extracción de datos",
+                    "Datos",
                 ]
             }
         ],

@@ -4,10 +4,74 @@ interface TheoryDictionaryEntry {
         sections: {
             title: string,
             list: string[],
-            /* subtitle: string, */
+            images?: string[],
             keywords: string[],
         }[],
     }[],
+}
+const theoryImages = {
+    algorithmsAndCapitalism: {
+        algorithms:
+            [
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms1.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms3.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms4.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms5.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms6.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms7.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms9.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms8.jpg",
+                "/images/theory/algorithmsAndCapitalism/algorithms/algorithms10.jpg",
+            ],
+        inMusic: [
+            "/images/theory/algorithmsAndCapitalism/music/music1.jpg",
+            "/images/theory/algorithmsAndCapitalism/music/music2.jpg",
+            "/images/theory/algorithmsAndCapitalism/music/music3.jpg",
+            "/images/theory/algorithmsAndCapitalism/music/music4.jpg",
+        ],
+        capitalism: [
+            "/images/theory/algorithmsAndCapitalism/capitalism/capitalism2.jpg",
+            "/images/theory/algorithmsAndCapitalism/algorithms/algorithms11.jpg",
+            "/images/theory/algorithmsAndCapitalism/capitalism/capitalism1.jpg",
+            "/images/theory/algorithmsAndCapitalism/capitalism/capitalism3.jpg",
+            "/images/theory/algorithmsAndCapitalism/capitalism/capitalism4.jpg",
+            "/images/theory/algorithmsAndCapitalism/capitalism/capitalism5.jpg",
+        ]
+    },
+    scot: {
+        scot: [
+            "/images/theory/scot/scot/scot1.jpg",
+            "/images/theory/scot/scot/scot2.jpg",
+            "/images/theory/scot/scot/scot3.jpg",
+            "/images/theory/scot/scot/scot4.jpg",
+        ],
+        music: [
+            "/images/theory/scot/music/music1.jpg",
+            "/images/theory/scot/music/music2.jpg",
+            "/images/theory/scot/music/music3.jpg",
+            "/images/theory/scot/music/music4.jpg",
+            "/images/theory/scot/music/music5.jpg",
+            "/images/theory/scot/music/music6.jpg",
+            "/images/theory/scot/music/music8.jpg",
+            "/images/theory/scot/music/music9.jpg",
+        ],
+    },
+    digitalObj: {
+        objects: [
+            "/images/theory/digital/objects/object1.jpg",
+            "/images/theory/digital/objects/object2.jpg",
+            "/images/theory/digital/objects/object3.jpg",
+            "/images/theory/digital/objects/object4.jpg",
+        ],
+        music: [
+            "/images/theory/digital/music/music1.jpg",
+            "/images/theory/digital/music/music2.jpg",
+            "/images/theory/digital/music/music5.jpg",
+            "/images/theory/digital/music/music6.jpg",
+            "/images/theory/digital/music/music7.jpg",
+        ]
+    }
+
 }
 
 export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
@@ -19,9 +83,11 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                     {
                         title: "Algoritmos",
                         list: [
-                            "Conjunto de instrucciones (entrada) que producen un resultado (salida)",
-                            "Son utilizados por los sistemas de recomendación y personalización",
-                            "Los estudios críticos sobre algoritmos los problematizan",
+                            "El más antiguo data del 2500 A.C.",
+                            "Ada Lovelace escribió el primero para ser ejecutado por una máquina.",
+                            "Conjunto de instrucciones (entrada) que producen un resultado (salida).",
+                            "Están interconectados con la vida cotidiana.",
+                            "Los estudios críticos sobre algoritmos los problematizan.",
                         ],
                         keywords: [
                             "Complejidad",
@@ -37,15 +103,16 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "Ruta a seguir",
                             "¡Tienen vida!",
                             "Vigilancia distribuida"
-                        ]
+                        ],
+                        images: theoryImages.algorithmsAndCapitalism.algorithms,
                     },
                     {
                         title: "Los algoritmos en la música",
                         list: [
-                            "Predicen el éxito que podría tener una canción en base a éxitos pasados",
-                            "Creación de música con Inteligencia Artificial",
-                            "Sistemas de recomendación y predicción",
-                            "Extracción de métricas y metadatos que terminan determinando el éxito"
+                            "Son utilizados por los sistemas de recomendación y personalización.",
+                            "Predicen el éxito que podría tener una canción en base a éxitos pasados.",
+                            "Creación de música con Inteligencia Artificial.",
+                            "Extracción de métricas y metadatos que terminan determinando el éxito."
                         ],
                         keywords: [
                             "Homogeneización",
@@ -53,24 +120,26 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "¿El cálculo sustituye a la creatividad?",
                             "¿Producción musical o estadística?",
                             "Reflejo del sistema socio-económico"
-                        ]
+                        ],
+                        images: theoryImages.algorithmsAndCapitalism.inMusic,
                     },
                     {
                         title: "Capitalismo",
                         list: [
-                            "Los algoritmos y los datos que manejan son indispensables para el modelo económico capitalista",
-                            "Los intereses del capitalismo no están tan claros en la era del streaming",
-                            "Se presenta este modelo como horizontal y beneficioso para los artistas y usuarios",
-                            "No se visibiliza el rol activo y mediador de los algoritmos",
-                            "Vida social como laboratorio para extraer hipótesis y realizar experimentos",
-                            "Usuario como una masa de datos que se fragmentan y vuelven a él en forma de recomendaciones"
+                            "Los algoritmos y los datos que manejan son indispensables para el modelo económico capitalista.",
+                            "Los intereses del capitalismo no están tan claros en la era del streaming.",
+                            "Se presenta este modelo como horizontal y beneficioso para los artistas y usuarios.",
+                            "No se visibiliza el rol activo y mediador de los algoritmos.",
+                            "Vida social como laboratorio para extraer hipótesis y realizar experimentos.",
+                            "Usuario como una masa de datos que se fragmentan y vuelven a él en forma de recomendaciones."
                         ],
                         keywords: [
                             "Caja negra digital",
                             "Cajanegrización",
                             "Lo dividual",
                             "Capitalismo de plataformas",
-                        ]
+                        ],
+                        images: theoryImages.algorithmsAndCapitalism.capitalism,
                     }
                 ],
             },
@@ -80,9 +149,10 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                     {
                         title: "SCOT (Social construction of technology)",
                         list: [
-                            "Surge a principios de 1980 en oposición al determinismo tecnológico",
-                            "Se centra en los procesos sociales que tienen que ver en el éxito o fracaso de una invención",
-                            "Estudio sobre el desarrollo de la bicicleta (Bijker y Pinch, 1984)"
+                            "Bijker, principios de 1980.",
+                            "Surge en oposición al determinismo tecnológico.",
+                            "Se centra en los procesos sociales que tienen que ver en el éxito o fracaso de una invención.",
+                            "Bijker y Pinch exponen estudio sobre el desarrollo de la bicicleta."
                         ],
                         keywords: [
                             "Flexibilidad interpretativa",
@@ -90,39 +160,29 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "Grupos sociales relevantes",
                             "Construcción social de significados",
                             "Clausura y estabilización"
-                        ]
+                        ],
+                        images: theoryImages.scot.scot,
                     },
                     {
                         title: "En la música",
                         list: [
-                            "Los soportes y dispositivos no surgen de forma lineal ni tienen un orígen unívoco",
-                            "La funcionalidad de los aparatos y soportes se construye socialmente a partir de los usos",
-                            "Estudio sobre los primeros sintetizadores (Pinch y Trocco, 1998)",
+                            "Los soportes y dispositivos no surgen de forma lineal ni tienen un orígen unívoco.",
+                            "La funcionalidad de los aparatos y soportes se construye socialmente a partir de los usos.",
+                            "Pinch y Trocco exponen estudio sobre los primeros sintetizadores en 1998.",
+                            "El sintetizador de Moog comienza a ser usado por su teclado, logrando sonidos más convencionales.",
+                            "El sintetizador de Buchla, sin teclado, queda en el margen y destinado a sonidos más experimentales.",
+                            "Como instrumento refleja la sociedad de la época.",
                         ],
                         keywords: [
                             "Orígenes múltiples",
                             "Problemas y soluciones",
                             "Éxito",
                             "Fracaso",
+                            "Flexibilidad",
                             "Estabilización",
                             "Evolución",
-                        ]
-                    },
-                    {
-                        title: "Críticas",
-                        list: [
-                            "Provee explicaciones pero no soluciones ni tiene una postura clara",
-                            "No aclara la situación de cada grupo social relevante",
-                            "Peligro de omitir a grupos que por diversos motivos no puedan tener acceso a cierto avance",
-                            "Su concepto de clausura es problemático",
-                            "Es antropocentrista, ignorando otro tipo de relaciones"
                         ],
-                        keywords: [
-                            "Postura acrítica",
-                            "Se ignora el poder",
-                            "Enfoque simplista",
-                            "Explicaciones insuficientes",
-                        ]
+                        images: theoryImages.scot.music,
                     },
                 ]
             },
@@ -130,51 +190,43 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                 title: "Los objetos digitales",
                 sections: [
                     {
-                        title: "El objeto digital musical",
-                        list: [
-                            "La música deja de estar tan vinculada con su presentación visual",
-                            "El proceso de reproducción se vuelve intocable e invisible",
-                        ],
-                        keywords: [
-                            "Desmaterialización",
-                            "Liquidez",
-                            "Intocable",
-                            "Invisible"
-                        ]
-                    },
-                    {
                         title: "Ontología del objeto digital",
                         list: [
-                            "Es necesario ir más allá de los tecnicismos",
-                            "No puede ser solamente abordado a partir de las concepciones de objeto natural (se captan con los sentidos) y objeto técnico (su existencia se vale de su relación con el medio asociado)",
-                            "El objeto digital es diferente a la vez que comparte características con ambos",
-                            "Solamente tiene significado dentro de una red en específico",
+                            "Yuk Hui propone ir más allá de los tecnicismos.",
+                            "El objeto natural se capta con los sentidos y el objeto técnico tiene su existencia ligada al medio asociado.",
+                            "El objeto digital es diferente aunque comparte características con ambos.",
+                            "Solamente tiene significado dentro de una red en específico.",
                             "Su sentido se da a través de cadenas de interpretaciones y meta-medios",
-                            "El medio es indisociable de su modo de existencia",
+                            "El medio es indisociable de su modo de existencia.",
                         ],
                         keywords: [
                             "Naturaleza relacional",
                             "Inmanencia",
                             "Identidad líquida",
                             "Redes",
-                        ]
+                            "Medio digital",
+                        ],
+                        images: theoryImages.digitalObj.objects,
                     },
                     {
-                        title: "Los Non-Fungible Tokens",
+                        title: "El objeto digital musical",
                         list: [
-                            "Los NFTs son la representación digital de un activo real a través de cadenas de bloques descentralizadas y compartidas",
-                            "Son un objeto digital y relacional pero con una identidad fija",
-                            "No se pueden dividir, intercambiar, sustituir o falsificar",
-                            "Adquirir un NFT es obtener el derecho al mismo",
-                            "Aunque no fueron pensados para implementarse en el arte, es aquí donde puede significar un retorno a lo único e irrepetible",
-                            "Spotify permitió a los artistas promover NFTs en sus perfiles en 2022 como una prueba",
-                            "Algunos artistas han logrado cifras millonarias vendiendo ediciones limitadas de sus trabajos, entradas a conciertos o mercadería especial sin la industria de por medio"
+                            "La música deja de estar tan vinculada con su presentación visual.",
+                            "El proceso de reproducción se vuelve intocable e invisible.",
+                            "No tiene identidad fija, se puede modificar, copiar y borrar.",
+                            "Aparecen los NFT como modo de retorno a lo único e irrepetible.",
+                            "Spotify permitió a los artistas promover NFTs en sus perfiles en 2022 como una prueba.",
+                            "Algunos artistas han logrado cifras millonarias vendiendo ediciones limitadas de sus trabajos."
                         ],
                         keywords: [
-                            "Resignificación",
-                            "Horizontalidad",
+                            "Desmaterialización",
+                            "Liquidez",
+                            "Intocable",
+                            "Invisible",
+                            "NFT",
                             "Incertidumbre",
-                        ]
+                        ],
+                        images: theoryImages.digitalObj.music,
                     },
                 ],
             },
@@ -188,9 +240,11 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                     {
                         title: "Algorithms",
                         list: [
-                            "Set of instructions (input) that produce a result (output)",
-                            "Used by recommendation and personalization systems",
-                            "Problematized by Critical Algorithm Studies",
+                            "The earliest dates back to 2500 BC.",
+                            "Ada Lovelace wrote the first one to be executed by a machine.",
+                            "Set of instructions (input) that produce a result (output).",
+                            "They are interconnected with everyday life.",
+                            "Problematized by Critical Algorithm Studies.",
                         ],
                         keywords: [
                             "Complexity",
@@ -199,22 +253,23 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "Algorithmic governmentality",
                             "Data mining, correlations and profiling",
                             "Filter bubble",
-                            "¿Neutrality?",
+                            "Neutrality?",
                             "Networks and processes",
                             "Produced in relations",
                             "Calculation society",
                             "Routes to follow",
-                            "¡They're alive!",
+                            "They're alive!",
                             "Distributed surveillance",
-                        ]
+                        ],
+                        images: theoryImages.algorithmsAndCapitalism.algorithms,
                     },
                     {
                         title: "Algorithms in music",
                         list: [
-                            "Success predictions based on successful songs in the past",
-                            "Music created with Artificial Intelligence",
-                            "Recommendation and prediction systems",
-                            "Metrics and metadata extraction that determine success"
+                            "They are used by recommendation and personalization systems.",
+                            "Success predictions based on successful songs in the past.",
+                            "Music created with Artificial Intelligence.",
+                            "Metrics and metadata extraction that determine success."
                         ],
                         keywords: [
                             "Homogenization",
@@ -222,16 +277,17 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "Calculus to replace creativity?",
                             "Music production or statistics?",
                             "A reflection of the socio-economic system"
-                        ]
+                        ],
+                        images: theoryImages.algorithmsAndCapitalism.inMusic,
                     },
                     {
                         title: "Capitalism",
                         list: [
-                            "Algorithms and the data they handle are indispensable to capitalist economy",
-                            "Capitalism's interests are not so clear in the streaming era",
-                            "This model is presented as horizontal and beneficial for artists and users",
-                            "The active and mediating role of algorithms is not visible",
-                            "Social life as a laboratory for extracting hypotheses and conducting experiments through data",
+                            "Algorithms and the data they handle are indispensable to capitalist economy.",
+                            "Capitalism's interests are not so clear in the streaming era.",
+                            "This model is presented as horizontal and beneficial for artists and users.",
+                            "The active and mediating role of algorithms is not visible.",
+                            "Social life as a laboratory for extracting hypotheses and conducting experiments.",
                             "User as a fragmented mass of data that later returns in the form of recommendations"
                         ],
                         keywords: [
@@ -239,7 +295,8 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "Blackboxing",
                             "The dividual",
                             "Platform capitalism",
-                        ]
+                        ],
+                        images: theoryImages.algorithmsAndCapitalism.capitalism,
                     }
                 ],
             },
@@ -249,49 +306,40 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                     {
                         title: "SCOT",
                         list: [
-                            "Emerges in the early 80s opposition to technological determinism",
-                            "Focuses on the social processes involved in the success or failure of an invention",
-                            "Study on bicycle development (Bijker and Pinch, 1984)"
+                            "Bijker, early 1980s.",
+                            "Emerges in opposition to technological determinism.",
+                            "Focuses on the social processes involved in the success or failure of an invention.",
+                            "Bijker and Pinch present a study on bicycle development on 1984."
                         ],
                         keywords: [
                             "Interpretive flexibility",
-                            "Multiple interpretations of an artifact",
+                            "Multiple interpretations",
                             "Relevant social groups",
                             "Social constructions of meanings",
                             "Closure and stabilization"
-                        ]
+                        ],
+                        images: theoryImages.scot.scot,
                     },
                     {
                         title: "In Music",
                         list: [
-                            "Formats and devices do not arise in linear fashion, nor do they have univocal origins",
-                            "The functionality of devices and formats is socially constructed based on how they're used",
-                            "Study on early synthesizers (Pinch and Trocco, 1998)",
+                            "Formats and devices do not arise in linear fashion, nor do they have univocal origins.",
+                            "The functionality of devices and formats is socially constructed based on how they're used.",
+                            "Pinch and Trocco present study on early synthesizers 1998.",
+                            "Moog's synthesizer begins to be used because of its his keyboard, achieving more conventional sounds.",
+                            "Buchla's synthesizer, without keyboard, remains on the sidelines and intended for more experimental sounds.",
+                            "As an instrument it reflects the society of the time."
                         ],
                         keywords: [
                             "Multiple origins",
                             "Problems and solutions",
                             "Success",
                             "Failure",
+                            "Flexibility",
                             "Stabilization",
                             "Evolution",
-                        ]
-                    },
-                    {
-                        title: "Criticism",
-                        list: [
-                            "Provides explanations but no solutions nor clear stance",
-                            "It does not clarify the situation of each relevant social group",
-                            "Danger of omitting groups that for various reasons may not have access to a certain device",
-                            "A problematic concept of closure",
-                            "It is anthropocentric, ignoring other types of relationships"
                         ],
-                        keywords: [
-                            "Non-critical stance",
-                            "Ignores power dynamics",
-                            "Simplistic approach",
-                            "Insufficient explanations",
-                        ]
+                        images: theoryImages.scot.music,
                     },
                 ]
             },
@@ -299,51 +347,43 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                 title: "Digital Objects",
                 sections: [
                     {
-                        title: "The Digital Musical Object",
-                        list: [
-                            "Music is no longer as closely linked to its visual presentation",
-                            "Reproduction process becomes untouchable and invisible",
-                        ],
-                        keywords: [
-                            "Dematerialization",
-                            "Liquidity",
-                            "Untouchable",
-                            "Invisible"
-                        ]
-                    },
-                    {
                         title: "Ontology of the Digital Object",
                         list: [
-                            "It is necessary to go beyond technicalities",
-                            "It cannot be approached solely based on the conceptions of the natural objects (those perceived with the senses) and the technical objects (those which existence is based on their relationship with the associated environment)",
-                            "The digital object characteristics with both while still being different",
-                            "It only has meaning within a specific network",
+                            "Yuk Hui proposes to go beyond technicalities.",
+                            "The natural object is grasped with the senses and the technical object has its existence linked to the associated environment.",
+                            "The digital object is different although it shares characteristics with both.",
+                            "It only has meaning within a specific network.",
                             "Its meaning is given through chains of interpretations and meta-media.",
-                            "The environment is inseparable from its mode of existence",
+                            "The environment is inseparable from its mode of existence.",
                         ],
                         keywords: [
                             "Relational nature",
                             "Immanence",
                             "Liquid identity",
                             "Networks",
-                        ]
+                            "Digital milieu"
+                        ],
+                        images: theoryImages.digitalObj.objects,
                     },
                     {
-                        title: "Non-Fungible Tokens",
+                        title: "The Digital Musical Object",
                         list: [
-                            "NFTs are the digital representation of a real asset through decentralized, shared blockchains",
-                            "They are a digital and relational object but with a fixed identity",
-                            "Cannot be divided, exchanged, substituted or counterfeited",
-                            "Acquiring an NFT is to obtain the right to it",
-                            "Although they were not intended to be implemented in art, it is here where it can mean a return to the unique and unrepeatable",
-                            "Spotify allowed artists to promote NFTs on their profiles in 2022 as a test run",
-                            "Some artists have made millions by selling limited editions of their work, concert tickets or special merchandise without the industry involved"
+                            "Music is no longer as closely linked to its visual presentation.",
+                            "Reproduction process becomes untouchable and invisible.",
+                            "It has no fixed identity, it can be modified, copied and deleted.",
+                            "NFTs appear as a way to return to the unique and unrepeatable.",
+                            "Spotify allowed artists to promote NFTs on their profiles in 2022 as a test.",
+                            "Some artists have made millions by selling limited editions of their work."
                         ],
                         keywords: [
-                            "Resignification",
-                            "Horizontality",
+                            "Dematerialization",
+                            "Liquidity",
+                            "Untouchable",
+                            "Invisible",
+                            "NFT",
                             "Uncertainty",
-                        ]
+                        ],
+                        images: theoryImages.digitalObj.music,
                     },
                 ],
             },
