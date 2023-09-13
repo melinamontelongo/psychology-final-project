@@ -321,7 +321,7 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                         images: theoryImages.scot.scot,
                     },
                     {
-                        title: "In Music",
+                        title: "In music",
                         list: [
                             "Formats and devices do not arise in linear fashion, nor do they have univocal origins.",
                             "The functionality of devices and formats is socially constructed based on how they're used.",
