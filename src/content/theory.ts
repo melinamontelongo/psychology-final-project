@@ -164,7 +164,7 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                         images: theoryImages.scot.scot,
                     },
                     {
-                        title: "En la música",
+                        title: "SCOT en la música",
                         list: [
                             "Los soportes y dispositivos no surgen de forma lineal ni tienen un orígen unívoco.",
                             "La funcionalidad de los aparatos y soportes se construye socialmente a partir de los usos.",
@@ -321,7 +321,7 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                         images: theoryImages.scot.scot,
                     },
                     {
-                        title: "In music",
+                        title: "SCOT in music",
                         list: [
                             "Formats and devices do not arise in linear fashion, nor do they have univocal origins.",
                             "The functionality of devices and formats is socially constructed based on how they're used.",

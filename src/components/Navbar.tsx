@@ -8,7 +8,7 @@ const Navbar = ({ lang }: { lang: string }) => {
     const { visible } = useScrollTop();
 
     return (
-        <nav className={`navbar fixed px-4 py-2 2xl:px-10 2xl:py-5 w-full backdrop-blur bg-base-100/20 z-50 shadow-lg transition-all duration-500 ease-in-out ${visible ? "top-0" : "-top-20"}`}>
+        <nav className={`navbar fixed px-4 py-2 2xl:px-10 2xl:py-5 w-full bg-base-200 z-50 shadow-lg transition-all duration-500 ease-in-out ${visible ? "top-0" : "-top-20"}`}>
             <div className="md:flex md:justify-between w-full hidden">
                 <Link href="/" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.start}</Link>
                 <Link href="/overview" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.introduction}</Link>
