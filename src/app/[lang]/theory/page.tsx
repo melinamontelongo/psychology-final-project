@@ -14,7 +14,7 @@ export default function TheoryPage({ params }: { params: { lang: string } }) {
                 {dictionary.theory.map((theory, i) => {
                     return (
                         <div key={stringToId(theory.title)} id={stringToId(theory.title)} className="pb-4">
-                            <h2 className="mb-5 text-5xl font-bold 2xl:text-8xl cursor-pointer text-primary">{theory.title}</h2>
+                            <h2 className="mb-5 text-5xl font-bold 2xl:text-8xl text-primary">{theory.title}</h2>
                             <div className="flex flex-col gap-5 mb-5">
                                 {theory.sections.map((section) => {
                                     return (
