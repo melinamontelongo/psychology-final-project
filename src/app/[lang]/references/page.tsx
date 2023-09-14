@@ -13,8 +13,9 @@ export default function ReferencesPage({ params }: { params: { lang: string } })
                     <h2 id="" className="mb-5 text-5xl font-bold 2xl:text-8xl text-primary">{lang === "en" ? "References" : "Referencias"}</h2>
                     <h4 className="text-2xl 2xl:text-5xl font-bold">
                         {lang === "en" ? "Full project and reference list can be found " : "El trabajo completo y la lista de referencias pueden ser encontrados "}
-
-                        <Link className="underline decoration-primary underline-offset-4 hover:text-primary" target="_blank" href="/tfg/tfg-Melina-Montelongo.pdf">{lang === "en" ? " here" : " aquí"}</Link>
+                        <Link className="underline decoration-primary underline-offset-4 hover:text-primary" target="_blank" href="https://drive.google.com/file/d/1nZJwVTQ0J_-xHHwzDy6IQcV9ygA30ghx/view?usp=sharing">
+                            {lang === "en" ? " here" : " aquí"}
+                        </Link>
                     </h4>
                     {lang === "en" && <p className="text-xl 2xl:text-2xl font-bold text-base-content">Only available in spanish as of now.</p>}
                     <div className="flex flex-row items-center justify-center gap-5">
