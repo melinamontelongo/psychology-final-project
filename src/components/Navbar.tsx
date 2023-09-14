@@ -9,7 +9,7 @@ const Navbar = ({ lang }: { lang: string }) => {
 
     return (
         <nav className={`navbar fixed px-4 py-2 2xl:px-10 2xl:py-5 w-full bg-base-200 z-50 shadow-lg transition-all duration-500 ease-in-out ${visible ? "top-0" : "-top-20"}`}>
-            <div className="md:flex md:justify-between w-full hidden">
+            <div className="lg:flex lg:justify-between w-full hidden">
                 <Link href="/" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.start}</Link>
                 <Link href="/overview" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.introduction}</Link>
                 <Link href="/formats" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.formats}</Link>
@@ -18,7 +18,7 @@ const Navbar = ({ lang }: { lang: string }) => {
                 <Link href="/references" className="btn btn-ghost 2xl:text-2xl">{NavbarDictionary[lang]?.references}</Link>
                 <ToggleLang lang={lang} />
             </div>
-            <div className="md:hidden">
+            <div className="lg:hidden">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -42,8 +42,10 @@ const Navbar = ({ lang }: { lang: string }) => {
                         <li>
                             <Link href="/references" className="2xl:text-2xl uppercase font-bold">{NavbarDictionary[lang]?.references}</Link>
                         </li>
-                        <li className="">
-                            <ToggleLang lang={lang} />
+                        <li className="flex-col p-0">
+                            <div className="flex-row p-0">
+                                <ToggleLang lang={lang} />
+                            </div>
                         </li>
                     </ul>
                 </div>
