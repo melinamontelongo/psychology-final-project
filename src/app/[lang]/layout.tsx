@@ -7,8 +7,8 @@ import BackToTop from '@/components/BackToTop';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Final Degree Project',
-  description: 'Final Degree Project by Melina Montelongo',
+  title: 'The Black Box of Infinite Music',
+  description: 'Final Psychology Degree Project by Melina Montelongo',
 }
 
 export default function RootLayout({

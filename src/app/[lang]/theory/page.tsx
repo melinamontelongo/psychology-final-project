@@ -43,7 +43,7 @@ export default function TheoryPage({ params }: { params: { lang: string } }) {
                     )
                 })}
             </div>
-            <div className="flex flex-row items-center justify-center gap-5">
+            <div className="flex flex-row items-center justify-center gap-5 pb-5">
                 <PrevBtnLink href={"/formats"} lang={params.lang}/>
                 <PauseBtn />
                 <NextBtnLink href={"/discussion"} lang={params.lang}/>
