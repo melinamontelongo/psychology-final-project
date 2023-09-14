@@ -10,11 +10,11 @@ export default function TheoryPage({ params }: { params: { lang: string } }) {
     const dictionary = TheoryDictionary[params.lang];
     return (
         <div className="min-h-screen pt-20 flex flex-col justify-center items-center">
-            <div className="max-w-screen-lg 2xl:max-w-screen-2xl mx-auto px-4">
+            <div className="w-screen md:max-w-screen-lg 2xl:max-w-screen-2xl mx-auto px-4">
                 {dictionary.theory.map((theory, i) => {
                     return (
                         <div key={stringToId(theory.title)} id={stringToId(theory.title)} className="pb-4">
-                            <h2 className="mb-5 text-5xl font-bold 2xl:text-8xl text-primary">{theory.title}</h2>
+                            <h2 className="mb-5 text-4xl md:text-5xl font-bold 2xl:text-8xl text-primary">{theory.title}</h2>
                             <div className="flex flex-col gap-5 mb-5">
                                 {theory.sections.map((section) => {
                                     return (

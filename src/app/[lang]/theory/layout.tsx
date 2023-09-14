@@ -20,7 +20,7 @@ export default function theoryLayout({
                         <li key={`sidebarFormatTitle-${stringToId(t.title)}`}>
                             <Link
                                 href={`#${stringToId(t.title)}`}
-                                className="text-2xl font-bold 2xl:text-4xl text-primary">
+                                className="text-xl md:text-2xl font-bold 2xl:text-4xl text-primary">
                                 {t.title}
                             </Link>
                             {t.sections.map((s) => {

@@ -15,7 +15,7 @@ const Drawer = ({ pageContent, drawerContent }: DrawerProps) => {
             </div>
             <div className="drawer-side z-40">
                 <label htmlFor="formatsSidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 py-16 w-80 min-h-full bg-base-200 text-base-content">
+                <ul className="menu py-16 2xl:py-24 w-60 md:w-80 2xl:w-96 min-h-full bg-base-200 text-base-content">
                     {drawerContent}
                 </ul>
             </div>

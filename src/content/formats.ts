@@ -138,8 +138,8 @@ const formatImages = {
             "images/formats/digital/ipod/ipod1.jpg",
             "images/formats/digital/ipod/ipod2.jpg",
             "images/formats/digital/ipod/ipod3.jpg",
-            "images/formats/digital/ipod/ipod4.jpg",
             "images/formats/digital/ipod/ipod5.jpg",
+            "images/formats/digital/ipod/ipod6.jpg",
         ]
     },
     streaming: {

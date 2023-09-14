@@ -20,7 +20,7 @@ export default function formatLayout({
                         <li key={`sidebarFormatTitle-${stringToId(f.title)}`}>
                             <Link
                                 href={`#${stringToId(f.title)}`}
-                                className="text-2xl font-bold 2xl:text-4xl text-primary">
+                                className="text-xl md:text-2xl font-bold 2xl:text-4xl text-primary">
                                 {f.title}
                             </Link>
                             {f.sections.map((s) => {

@@ -10,7 +10,7 @@ const BackToTop = () => {
     }
 
     return (
-        <div className={`fixed px-4 py-2  right-0 ${visible ? "bottom-0" : "-bottom-20"} transition-all duration-500 ease-in-out`}>
+        <div className={`fixed px-4 py-2 right-0 ${visible ? "bottom-0" : "-bottom-20"} transition-all duration-500 ease-in-out`}>
             <button className="btn btn-circle btn-primary" onClick={() => scrollToTop()}>
                 <IoIosArrowUp className="text-xl" />
             </button>

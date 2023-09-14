@@ -25,6 +25,14 @@
   }
 }
 
+@media (min-width: 1535px){
+  .embla {
+    --slide-spacing: 0.5rem;
+    --slide-height: 35rem;
+    padding: 1rem;
+  }
+}
+
 .embla__viewport {
   overflow: hidden;
 }
