@@ -46,9 +46,9 @@ export default function FormatsPage({ params }: { params: { lang: string } }) {
                 })}
             </div>
             <div className="flex flex-row items-center justify-center gap-5">
-                <PrevBtnLink href={"/overview"} />
+                <PrevBtnLink href={"/overview"} lang={params.lang} />
                 <PauseBtn />
-                <NextBtnLink href={"/theory"} />
+                <NextBtnLink href={"/theory"} lang={params.lang} />
             </div>
         </div>
     )

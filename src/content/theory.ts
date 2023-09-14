@@ -315,7 +315,7 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "Interpretive flexibility",
                             "Multiple interpretations",
                             "Relevant social groups",
-                            "Social constructions of meanings",
+                            "Social construction of meanings",
                             "Closure and stabilization"
                         ],
                         images: theoryImages.scot.scot,
