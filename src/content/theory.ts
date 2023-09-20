@@ -196,7 +196,7 @@ export const TheoryDictionary: Record<string, TheoryDictionaryEntry> = {
                             "El objeto natural se capta con los sentidos y el objeto técnico tiene su existencia ligada al medio asociado.",
                             "El objeto digital es diferente aunque comparte características con ambos.",
                             "Solamente tiene significado dentro de una red en específico.",
-                            "Su sentido se da a través de cadenas de interpretaciones y meta-medios",
+                            "Su sentido se da a través de cadenas de interpretaciones y meta-medios.",
                             "El medio es indisociable de su modo de existencia.",
                         ],
                         keywords: [

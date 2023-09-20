@@ -267,7 +267,7 @@ export const FormatsDictionary: Record<string, FormatsDictionaryEntry> = {
                         title: "DJs y Top 40",
                         info: [
                             "Figuras que aparecen cuando los sponsors abandonan la radio en favor de la televisión.",
-                            "La radio se vuelca hacia la música, especialmente rythm and blues y rock and roll.",
+                            "La radio se vuelca hacia la música, especialmente rhythm and blues y rock and roll.",
                             "Inspirados por el éxito de las rocolas, se comienza a pasar una selección de 40 discos por semana que se repetirían hasta unas 30 o 40 veces por día.",
                             "Esto impulsa la venta de discos y los mecanismos de compra por correo a través de suscripciones.",
                         ],
@@ -517,7 +517,7 @@ export const FormatsDictionary: Record<string, FormatsDictionaryEntry> = {
                             title: "DJs and Top 40",
                             info: [
                                 "Figures that appear when sponsors abandon radio in favor of television.",
-                                "Radio turns to music, especially rock and roll.",
+                                "Radio turns to music, especially rhythm and blues and rock and roll.",
                                 "Inspired by the jukeboxes' success, a selection of 40 records per week began to be played and repeated up to 30 or 40 times per day.",
                                 "This drives record sales and mail orders through subscriptions.",
                             ],
