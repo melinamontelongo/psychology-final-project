@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Musical Blackbox',
     description: 'Final Psychology Degree Project by Melina Montelongo.',
-    images: ["/images/backgrounds/hero-start.jpg"],
-    url: "https://themusicalblackbox.vercel.app/"
+    images: ["//themusicalblackbox.vercel.app/images/backgrounds/hero-start.jpg"],
+    url: "//themusicalblackbox.vercel.app/"
   },
 }
 
