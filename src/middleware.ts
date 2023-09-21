@@ -6,13 +6,18 @@ const locales = ["es", "en"];
 export const defaultLocale = "es";
 
 const getLocale = (request: Request): string => {
-    const headers = new Headers(request.headers);
-    const acceptLanguage = headers.get("accept-language");
-    if (acceptLanguage === "*") return defaultLocale;
-    if (acceptLanguage) headers.set("accept-language", acceptLanguage.replaceAll("_", "-"));
-    const headersObj = Object.fromEntries(headers.entries());
-    const languages = new Negotiator({ headers: headersObj }).languages();
-    return match(languages, locales, defaultLocale);
+    try {
+        const headers = new Headers(request.headers);
+        const acceptLanguage = headers.get("accept-language");
+        if (acceptLanguage === "*") return defaultLocale;
+        if (acceptLanguage) headers.set("accept-language", acceptLanguage.replaceAll("_", "-"));
+        const headersObj = Object.fromEntries(headers.entries());
+        const languages = new Negotiator({ headers: headersObj }).languages();
+        return match(languages, locales, defaultLocale);
+    } catch (error) {
+        console.error(error);
+        return defaultLocale;
+    }
 }
 
 const middleware = (request: NextRequest) => {
