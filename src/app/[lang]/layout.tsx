@@ -20,6 +20,12 @@ export const metadata: Metadata = {
   },
 }
 
+export const dynamic = "force-static";
+
+export const runtime = "nodejs";
+
+export const revalidate = 60;
+
 export default function RootLayout({
   children, params
 }: {
