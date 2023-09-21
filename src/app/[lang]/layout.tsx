@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'The Musical Blackbox',
     description: 'Final Psychology Degree Project by Melina Montelongo.',
     images: ["//images/backgrounds/hero-start.jpg"],
-    url: "//https://themusicalblackbox.vercel.app/"
+    url: "https://themusicalblackbox.vercel.app/"
   },
 }
 
