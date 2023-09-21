@@ -8,6 +8,7 @@ export const defaultLocale = "es";
 const getLocale = (request: Request): string => {
     const headers = new Headers(request.headers);
     const acceptLanguage = headers.get("accept-language");
+    if (acceptLanguage === "*") return defaultLocale;
     if (acceptLanguage) headers.set("accept-language", acceptLanguage.replaceAll("_", "-"));
     const headersObj = Object.fromEntries(headers.entries());
     const languages = new Negotiator({ headers: headersObj }).languages();
