@@ -7,8 +7,17 @@ import BackToTop from '@/components/BackToTop';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'The Black Box of Infinite Music',
-  description: 'Final Psychology Degree Project by Melina Montelongo',
+  metadataBase: new URL("https://themusicalblackbox.vercel.app"),
+  title: 'The Musical Blackbox',
+  description: 'Final Psychology Degree Project by Melina Montelongo.',
+  openGraph: {
+    type: "website",
+    title: "The Musical Blackbox",
+    siteName: "The Musical Blackbox",
+    description: "Final Psychology Degree Project by Melina Montelongo.",
+    images: "//images/backgrounds/hero-start.jpg",
+    url: "https://themusicalblackbox.vercel.app"
+  },
 }
 
 export default function RootLayout({
