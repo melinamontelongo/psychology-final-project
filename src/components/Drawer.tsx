@@ -10,7 +10,7 @@ const Drawer = ({ pageContent, drawerContent }: DrawerProps) => {
         <div className="drawer lg:drawer-open">
             <input id="formatsSidebar" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-                <label htmlFor="formatsSidebar" className="btn btn-primary btn-circle drawer-button lg:hidden mt-32 fixed z-30"><IoIosArrowForward className="text-xl" /></label>
+                <label htmlFor="formatsSidebar" className="btn btn-sm btn-circle md:btn-md btn-primary drawer-button lg:hidden mt-32 fixed z-30"><IoIosArrowForward className="text-xl" /></label>
                 {pageContent}
             </div>
             <div className="drawer-side z-40">

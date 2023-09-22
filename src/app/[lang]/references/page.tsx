@@ -11,14 +11,14 @@ export default function ReferencesPage({ params }: { params: { lang: string } })
             <div className="hero-overlay bg-base-200 bg-opacity-60"></div>
             <div className="hero-content text-neutral-content pt-20 flex flex-col justify-evenly h-full">
                 <div className="max-w-screen-lg 2xl:max-w-screen-2xl mx-auto px-4">
-                    <h2 id="" className="mb-5 text-5xl font-bold 2xl:text-8xl text-primary">{lang === "en" ? "References" : "Referencias"}</h2>
-                    <h4 className="text-2xl 2xl:text-5xl font-bold">
+                    <h2 id="" className="mb-5 text-3xl md:text-5xl font-bold 2xl:text-8xl text-primary">{lang === "en" ? "References" : "Referencias"}</h2>
+                    <h4 className="text-xl sm:text-2xl 2xl:text-5xl font-bold">
                         {lang === "en" ? "Full project and reference list can be found " : "El trabajo completo y la lista de referencias pueden ser encontrados "}
                         <Link className="underline decoration-primary underline-offset-4 hover:text-primary" target="_blank" href="https://sifp.psico.edu.uy/sites/default/files/trabajos_finales/archivos/tfg_-_melina_montelongo_1.pdf">
                             {lang === "en" ? " here." : " aquí."}
                         </Link>
                     </h4>
-                    {lang === "en" && <p className="text-xl 2xl:text-2xl font-bold text-base-content">Only available in spanish as of now.</p>}
+                    {lang === "en" && <p className="text-lg sm:text-xl 2xl:text-2xl font-bold text-base-content">Only available in spanish as of now.</p>}
                 </div>
                 <div className="space-y-5">
                     <div className="flex flex-row items-center justify-center gap-5">
@@ -27,7 +27,7 @@ export default function ReferencesPage({ params }: { params: { lang: string } })
                         <RollbackBtnLink href={"/"} lang={params.lang} />
                     </div>
                     <div className="space-y-5">
-                        <p className="text-xl 2xl:text-2xl font-bold text-base-content">
+                        <p className="text-lg sm:text-xl 2xl:text-2xl font-bold text-base-content">
                             {params.lang === "en" ?
                                 "This site was developed to showcase my Final Degree Project."
                                 :

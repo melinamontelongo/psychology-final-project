@@ -14,15 +14,15 @@ export default function FormatsPage({ params }: { params: { lang: string } }) {
                 {dictionary.formats.map((format) => {
                     return (
                         <div key={stringToId(format.title)} id={stringToId(format.title)} className="pb-4">
-                            <h2 className="mb-5 text-4xl md:text-5xl font-bold 2xl:text-8xl text-primary">{format.title}</h2>
+                            <h2 className="mb-5 text-3xl md:text-5xl font-bold 2xl:text-8xl text-primary">{format.title}</h2>
                             <div className="flex flex-col gap-5 mb-5">
                                 {format.sections.map((section) => {
                                     return (
                                         <div key={stringToId(section.title)} id={stringToId(section.title)} className="flex flex-col gap-2">
                                             <div>
-                                                <h4 className="text-2xl 2xl:text-5xl font-bold underline decoration-primary underline-offset-4">{section.title}</h4>
+                                                <h4 className="text-xl sm:text-2xl 2xl:text-5xl font-bold underline decoration-primary underline-offset-4">{section.title}</h4>
                                                 {section.info.map((i) => {
-                                                    return <p className="text-xl 2xl:text-2xl" key={i}>{i}</p>
+                                                    return <p className="text-lg sm:text-xl 2xl:text-2xl" key={i}>{i}</p>
                                                 })}
                                             </div>
                                             <div>
